@@ -1,6 +1,6 @@
 @font-face {
     font-family: iconfont;
-    src: url(//at.alicdn.com/t/font_976687_hn68rzmk8d7.woff2?t=1646383061169) format('woff2'), url(//at.alicdn.com/t/font_976687_hn68rzmk8d7.woff?t=1646383061169) format('woff'), url(//at.alicdn.com/t/font_976687_hn68rzmk8d7.ttf?t=1646383061169) format('truetype')
+    src: url(../font/font_976687_hn68rzmk8d7.woff2) format('woff2'), url(../font/font_976687_hn68rzmk8d7.woff) format('woff'), url(../font/font_976687_hn68rzmk8d7.ttf) format('truetype')
 }
 
 .iconfont {

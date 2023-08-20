@@ -1,5 +1,5 @@
 const API_URL = location.origin,
-    STATIC_URL = "/assets/",
+    STATIC_URL = "",
     debug = !1;
 var QRCode;
 ! function(e) {
@@ -5008,7 +5008,7 @@ $.fn.executePlugin = function() {
     var $this = $(this);
     $this.imageLazyload().initArticleHeader().initTooltip().initSticky().initUploader().initRangeSlider().
     initDatePicker().initDoubleRainbowPicker().initColorPickers().initSelect2().initCodeMirror().codeHighlight().
-    searchResultHighlight().initEventHandler().footerHeight().initAds().initStats();
+    searchResultHighlight().initEventHandler().footerHeight();
 
     if (window.loaded && typeof window.loaded === 'function') {
         window.loaded();
@@ -5413,43 +5413,6 @@ $.fn.footerHeight = function() {
         });
     } else {
         $('.page-footer').removeAttr('style');
-    }
-    return this;
-};
-$.fn.initAds = function() {
-    //google广告
-    return this;
-};
-$.fn.initStats = function() {
-    //百度统计
-    eval(function(p, a, c, k, e, r) {
-        e = function(c) {
-            return c.toString(a)
-        };
-        if (!''.replace(/^/, String)) {
-            while (c--) r[e(c)] = k[c] || e(c);
-            k = [function(e) {
-                return r[e]
-            }];
-            e = function() {
-                return '\\w+'
-            };
-            c = 1
-        };
-        while (c--)
-            if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]);
-        return p
-    }('1 3=3||[];(7(){1 a=4.8("5");a.9="b://6.c.d/6.e?f";1 2=4.g("5")[0];2.h.i(a,2)})();', 19, 19, '|var|s|_hmt|document|script|hm|function|createElement|src||https|baidu|com|js|c6290e4d4eb3b59654df2e0938db17ba|getElementsByTagName|parentNode|insertBefore'.split('|'), 0, {}));
-    var slug = $('#slug').val() || '';
-    if (slug) {
-        var name = 'stats/index';
-        var params = {
-            data: {
-                mark: slug
-            }
-        };
-        var callback = function(json) {};
-        http.tool(name, params, callback);
     }
     return this;
 };
